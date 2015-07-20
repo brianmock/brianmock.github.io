@@ -50,25 +50,25 @@ ul {
   width:33em;
   left:10em;
   position:relative;
-  height:200%;
+  height:100em;
   margin:0;
 }
 
 #rightbar {
-  top:6em;
+  top:-101em;
   background-color:DDFBFF;
-  left:55em;
-  width: 8em;
-  height: 52em;
+  left:45em;
+  width: 11.25em;
+  height: 35em;
   text-align:center;
-  position:absolute;
+  position:relative;
 }
 
 #leftbar {
   top:14em;
   background-color:DDFBFF;
   width: 8em;
-  height: 44em;
+  height: 27em;
   text-align:center;
 }
 
@@ -108,4 +108,8 @@ a:links {
 
 a:hover {
   color:dimgray;
+}
+
+img {
+  margin-top:3.75em;
 }
