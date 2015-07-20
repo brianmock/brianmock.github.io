@@ -1,26 +1,32 @@
 <!DOCTYPE html>
+<html>
 <head>
   <title>DBC Week 1 Tech Blog Post</title>
   <meta charset="UTF-8">
-  <link rel="stylesheet" type="text/css" href="your-stylesheet-link-here.css">
+  <link rel="stylesheet" type="text/css" href="../default.css">
 </head>
 
-<main>
+<body>
+  <header>
   <h1>DBC Week 1 - Tech Blog</h1>
+  </header>
+<main>
+
   <h2>The Basics of Ninjaing</h2>
   <h4>Friday July 10, 2015</h4>
 
-  <section>
+  <article>
     <p>
-    Woah, lots to review from week 1. Phase 0 is only beginning and I feel as though my computing knowledge has doubled, hopefully this exponential trend will continue. We will begin with one of the most important concepts in software development, version control. This systematic strategy for creating something should be available in all of life's endeavors. Imagine being Michelangelo working on the statue of David. Now imagine halfway through you stumble and chip off his ENTIRE arm. With version control, you would be able to revert back to a stage prior to your clumsy catastrophe with the arm fully intact. That is the beauty of version control. Not only does this system allow you to set 'checkpoints' as you are building, an eloquent programmer would also be documenting each version that has been committed (saved). Instead of having to track backwards solely on a series of numbers, proper commits will have a brief yet clear description of what changes have been made. Read more about a proper commit message <a href="http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html">here</a> and <a href="http://365git.tumblr.com/post/3308646748/writing-git-commit-messages">here</a>. 
+    Woah, lots to review from week 1. Phase 0 is only beginning and I feel as though my computing knowledge has doubled, hopefully this exponential trend will continue. We will begin with one of the most important concepts in software development, version control. This systematic strategy for creating something should be available in all of life's endeavors. Imagine being Michelangelo working on the statue of David. Now imagine halfway through you stumble and chip off his ENTIRE arm. With version control, you would be able to revert back to a stage prior to your clumsy catastrophe with the arm fully intact. That is the beauty of version control. Not only does this system allow you to set 'checkpoints' as you are building, an eloquent programmer would also be documenting each version that has been committed (saved). Instead of having to track backwards solely on a series of numbers, proper commits will have a brief yet clear description of what changes have been made. Read more about a proper commit message <a href="http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html">here</a> and <a href="http://365git.tumblr.com/post/3308646748/writing-git-commit-messages">here</a>.
     </p>
     <p>
-    One of the tools available for version control and tracking changes is 'git'. This tool works by tracking changes of all files present in your repository. Any time a new file is introduced or an existing file is edited, git will track this change under the state 'working'. At any time, you can check the current status of files using the command `git status`. This will present you with the files currently being tracked by git and provide their current state, whether that be 'working' or 'staged' or 'committed' which we will get to in a moment. Any 'working' file that you are ready to save via a commit must be moved to the 'staged' status. This can be accomplished using the `git add filename` command, replacing filename with the name of the file you would like to commit. After reviewing which files are set to 'staged' via the status command, you can commit them in one of two ways depending on how lengthy of a description you would like to associate with this commit. The first method is `git commit -m "MESSAGE"`. This will allow you to add a brief message regarding your commit. For a more in-depth message, use the command `git commit -v`. This should open your default text editor in order to write out a commit message. Once the commit command is entered, you can review using the `git log` command. This will display the commit history for the current repository. This should be enough to get you started but keep in mind, git is an extremely capable tool, read more in the git man pages or read more online <a href="https://git-scm.com/documentation">here</a>. 
+    One of the tools available for version control and tracking changes is 'git'. This tool works by tracking changes of all files present in your repository. Any time a new file is introduced or an existing file is edited, git will track this change under the state 'working'. At any time, you can check the current status of files using the command `git status`. This will present you with the files currently being tracked by git and provide their current state, whether that be 'working' or 'staged' or 'committed' which we will get to in a moment. Any 'working' file that you are ready to save via a commit must be moved to the 'staged' status. This can be accomplished using the `git add filename` command, replacing filename with the name of the file you would like to commit. After reviewing which files are set to 'staged' via the status command, you can commit them in one of two ways depending on how lengthy of a description you would like to associate with this commit. The first method is `git commit -m "MESSAGE"`. This will allow you to add a brief message regarding your commit. For a more in-depth message, use the command `git commit -v`. This should open your default text editor in order to write out a commit message. Once the commit command is entered, you can review using the `git log` command. This will display the commit history for the current repository. This should be enough to get you started but keep in mind, git is an extremely capable tool, read more in the git man pages or read more online <a href="https://git-scm.com/documentation">here</a>.
     </p>
     <p>
     While git is a fantastic tool for tracking changes to your local repository, what can we use to store these repos and make them readily available wherever you may be? Your answer is GitHub. This social coding site provides hosting resources for your repo and countless tools for manipulating, sharing, editing and collaborating. By allowing a user to store their repo on GitHub, the repo can be accessed anywhere that an internet connection is present. Additionally, GitHub encourages users to collaborate by allowing peers to fork a repo, edit some code and create a pull request to the original owner (or another peer). This allows multiple people to work on the same code base and promotes peer review prior to committing new code. Finally, with the proper configuration (<a href="https://github.com/Devbootcamp/phase-0-unit-1/tree/master/week-1/set-remotes">setting up remotes</a>), changes made on your local repo using git can be pushed to your remote repository on GitHub with the `git push 'remote' 'branch'` command (replacing remote with your remote's nickname or URL and branch with your local branch you wish to upload).
     </p>
 
-  </section>
+  </article>
 </main>
-
+</body>
+</html>
