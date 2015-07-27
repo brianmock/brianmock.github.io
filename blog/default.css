@@ -1,0 +1,115 @@
+/*brianmock.github.io stylesheet*/
+
+/*Colors - 9CADCC, 476499, DDFBFF, FFBA9D, CCA39C*/
+
+body {
+  background-color: FFFFFF;
+  margin:0px auto;
+  width: 900px;
+  color:476499;
+}
+
+header {
+  color: 476499;
+  background-color:9CADCC;
+  height:5em;
+  text-align:center;
+  width:100%;
+  top:1em;
+}
+
+section {
+  position:fixed;
+  height:7em;
+  top: 6em;
+  background-color:CCA39C;
+  width:8em;
+  text-align: center;
+}
+
+article {
+  position:relative;
+  background-color:FFD39D;
+  height:15em;
+  width:31.5em;
+  margin:10px 10px;
+  text-align:left;
+  top:10px;
+}
+
+ul {
+   color:476499;
+   list-style-type: none;
+   padding:5px 10px;
+   text-align: left;
+}
+
+#container {
+  top: 0em;
+  background-color: FFBA9D;
+  width:33em;
+  left:10em;
+  position:relative;
+  height:100em;
+  margin:0;
+}
+
+#rightbar {
+  top:-100em;
+  background-color:DDFBFF;
+  left:45em;
+  width: 11.25em;
+  height: 35em;
+  text-align:center;
+  position:relative;
+}
+
+#leftbar {
+  top:14em;
+  background-color:DDFBFF;
+  width: 8em;
+  height: 27em;
+  text-align:center;
+}
+
+footer {
+  color: 476499;
+  background-color:9CADCC;
+  height:3em;
+  text-align:center;
+  width:900px;
+  bottom:0;
+  position:fixed;
+}
+
+#containerblog {
+  top: 0em;
+  background-color: FFBA9D;
+  width:46.25em;
+  left:10em;
+  position:relative;
+  height:200%;
+  margin:0;
+}
+
+.bloglist {
+  position:relative;
+  background-color:FFD39D;
+  height:3em;
+  width:44.75em;
+  margin:10px 10px;
+  text-align:left;
+  top:10px;
+}
+
+a:links {
+  text-decoration: none;
+  }
+
+a:hover {
+  color:dimgray;
+}
+
+img {
+  margin-top:3.75em;
+}
