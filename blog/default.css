@@ -3,15 +3,15 @@
 /*Colors - 9CADCC, 476499, DDFBFF, FFBA9D, CCA39C*/
 
 body {
-  background-color: FFFFFF;
+  background-color: #FFFFFF;
   margin:0px auto;
   width: 900px;
-  color:476499;
+  color:#476499;
 }
 
 header {
-  color: 476499;
-  background-color:9CADCC;
+  color: #476499;
+  background-color:#9CADCC;
   height:5em;
   text-align:center;
   width:100%;
@@ -22,23 +22,23 @@ section {
   position:fixed;
   height:7em;
   top: 6em;
-  background-color:CCA39C;
+  background-color:#CCA39C;
   width:8em;
   text-align: center;
 }
 
 article {
   position:relative;
-  background-color:FFD39D;
-  height:15em;
-  width:31.5em;
+  background-color:#FFD39D;
+  /*height:15em;
+  width:31.5em;*/
   margin:10px 10px;
   text-align:left;
   top:10px;
 }
 
 ul {
-   color:476499;
+   color:#476499;
    list-style-type: none;
    padding:5px 10px;
    text-align: left;
@@ -46,7 +46,7 @@ ul {
 
 #container {
   top: 0em;
-  background-color: FFBA9D;
+  background-color: #FFBA9D;
   width:33em;
   left:10em;
   position:relative;
@@ -56,7 +56,7 @@ ul {
 
 #rightbar {
   top:-100em;
-  background-color:DDFBFF;
+  background-color:#DDFBFF;
   left:45em;
   width: 11.25em;
   height: 35em;
@@ -66,15 +66,15 @@ ul {
 
 #leftbar {
   top:14em;
-  background-color:DDFBFF;
+  background-color:#DDFBFF;
   width: 8em;
   height: 27em;
   text-align:center;
 }
 
 footer {
-  color: 476499;
-  background-color:9CADCC;
+  color: #476499;
+  background-color:#9CADCC;
   height:3em;
   text-align:center;
   width:900px;
@@ -84,7 +84,7 @@ footer {
 
 #containerblog {
   top: 0em;
-  background-color: FFBA9D;
+  background-color: #FFBA9D;
   width:46.25em;
   left:10em;
   position:relative;
@@ -94,7 +94,7 @@ footer {
 
 .bloglist {
   position:relative;
-  background-color:FFD39D;
+  background-color:#FFD39D;
   height:3em;
   width:44.75em;
   margin:10px 10px;
