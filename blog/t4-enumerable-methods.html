@@ -15,7 +15,8 @@
 
   <article>
     <p>
-        The cycle method is relatively simple to understand but when used in conjunction with several other methods, it becomes very powerful. The method can be called on both arrays and hashes and will simply loop through the items indefinitely and execute the code block associated. For example:
+        The cycle method is relatively simple to understand but when used in conjunction with several other methods, it becomes very powerful. The method can be called on both arrays and hashes and will simply loop through the items indefinitely and execute the code block associated. For example: <br>
+
 
         <code> days = %w{Monday Tuesday Wednesday Thursday Friday Saturday Sunday}
         days.cycle{|x| p x}
@@ -28,9 +29,9 @@
         Sunday
         Monday
         Tuesday
-        ...</code>
+        ...</code><br>
 
-        This loop will continue forever (or until ctrl C is hit) unless we implement a break statement within the code block
+        This loop will continue forever (or until ctrl C is hit) unless we implement a break statement within the code block:<br>
 
         <code> days = %w{Monday Tuesday Wednesday Thursday Friday Saturday Sunday}
         days.cycle{|x|
@@ -43,30 +44,30 @@
         Thursday
         Friday
         Saturday
-        </code>
+        </code><br>
 
         The same would apply for a hash, but the output would be the key/value pair in the form of an array (key as element 0, value as element 1).
 
     </p>
     <p>
-        The beauty of cycle comes in to play when the method is used to create a new object like so:
+        The beauty of cycle comes in to play when the method is used to create a new object like so:<br>
         <code>
         days = %w{Monday Tuesday Wednesday Thursday Friday Saturday Sunday}
         days_of_week = days.cycle
-        </code>
+        </code><br>
 
-        Now we have a cycle object that we can apply a few different methods to. The first two we will look at are `next` and `rewind`. These methods help us step through our cycle object. If next is called on the object, it will return the next item in the cycle.
+        Now we have a cycle object that we can apply a few different methods to. The first two we will look at are `next` and `rewind`. These methods help us step through our cycle object. If next is called on the object, it will return the next item in the cycle.<br>
 
         <code>
         days_of_week.next
         => Monday
         days_of_week.next
         => Tuesday
-        </code>
+        </code><br>
 
         As we continue to call next, the output will continue to change as we cycle through the items in the cycle object. If we get to the last item and call next, it will start again at the beginning of the cycle.
 
-        If we find ourselves in the middle of a cycle and want to return to the beginning, `rewind` can be called on the cycle object:
+        If we find ourselves in the middle of a cycle and want to return to the beginning, `rewind` can be called on the cycle object:<br>
 
         <code>
         days_of_week.next
