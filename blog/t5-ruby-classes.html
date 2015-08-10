@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DBC Week 4 Tech Blog Post</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="default.css">
+</head>
+<body>
+<main>
+  <header>
+  <h1>The Class Object</h1>
+  </header>
+  <h2>Why you should pay attention to class</h2>
+  <h4>August 10, 2015</h4>
+
+  <article>
+    <p>
+      First things first, as you will hear all the time when learning Ruby, everything is an object. Classes obey this golden rule as well. A class can be designed to initialize new objects that will all share similar traits. These traits can be attributes (instance variables) or functions (instance methods). Let's take a real-world object and translate it into its own class. For this example, we will be creating a class for Cheese! Cheese has several different attributes (color, consistency, stink, origin, name) but we are going to focus on the last two.
+    </p>
+    <p>
+        <code>
+        class Cheese
+          attr_accessor :name, :origin
+
+          def initialize(name,origin)
+            @name = name
+            @origin = origin
+          end
+
+          def display
+            puts "I am #{name} cheese from #{@origin}"
+          end
+        end
+        </code>
+    </p>
+    <p>
+        This very simple class can now be used to generate an object that will have the built in attributes name and origin. When we make a call to create a new Cheese object, we simple pass in the name and origin and that information will be saved with the object. These attributes are known as instance variables and will be specific to each instance of the class that has been created. The instance variable is denoted by an @ sign to begin the name. Classes also have instance methods which are available only to objects of that class. In our example, Cheese objects will have the instance method display which will simply read out the name and origin of that instance. An idea for expanding this class could be to include a hash that consists of wines paired with the cheeses that go well with them and we could define a new method to return what wine pairs well with our Cheese object.
+    </p>
+
+      <!-- copy and paste as many sections as you want to add paragraphs -->
+  </article>
+</main>
+</body>
+</html>
