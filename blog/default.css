@@ -113,3 +113,7 @@ a:hover {
 img {
   margin-top:3.75em;
 }
+
+code {
+  white-space: pre;
+}
