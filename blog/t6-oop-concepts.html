@@ -33,7 +33,9 @@
     </p>
     <p>
         These two methods are a part of the CookConverter module. If we want to use them in our new application, we would need to add a line of code to the top of our page that told the program that it needs what is in the file we created for CookConverter. If we named our file converter.rb, we would add this line at the top
-        <code>require "converter"</code>
+        <code>
+        require "converter"
+        </code>
         Then, if we wanted to reference one of the methods from this module, we just can call it like we would a standard instance method:
         <code>
         x = CookConverter.cups_to_gal(32)
