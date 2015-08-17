@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DBC Week 6 Tech Blog Post</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="default.css">
+</head>
+<body>
+<main>
+  <header>
+  <h1>Object Oriented Programming Concepts</h1>
+  </header>
+  <h2>Modules vs Classes</h2>
+  <h4>August 16, 2015</h4>
+
+  <article>
+    <p>
+      Classes and modules may appear very similar when you first get into ruby but while there is a relationship (a class' superclass is module), they handle entirely different roles. From my research, I would say the greatest difference is a class is all about creating objects whereas a module is all about creating functions. A module can be thought of as a place to store common methods that could be applicable across multiple applications. These module files will often consist of classes with methods defined within them that could come in handy elsewhere. For example, we could come up with a bunch of measurement conversion functions like the following:
+
+      <code>
+      module CookConverter
+        def CookConverter.cups_to_gal(num)
+          num / 16
+        end
+
+        def CookConverter.tsp_to_tbsp(num)
+          num / 3
+        end
+
+        CUPS_IN_GAL = 16
+      end
+      </code>
+    </p>
+    <p>
+        These two methods are a part of the CookConverter module. If we want to use them in our new application, we would need to add a line of code to the top of our page that told the program that it needs what is in the file we created for CookConverter. If we named our file converter.rb, we would add this line at the top
+        <code>require "converter"</code>
+        Then, if we wanted to reference one of the methods from this module, we just can call it like we would a standard instance method:
+        <code>
+        x = CookConverter.cups_to_gal(32)
+        p x # => 2
+        </code>
+        The code is able to access the CookConverter method cups_to_gal even though it is in another file! Also, we did define a variable in our CookConverter module as well, to access this value we would put:
+        <code>
+        y = CookConverter::CUPS_IN_GAL
+        p y # => 16
+        </code>
+
+        This tells our program to look in the module for a variable named CUPS_IN_GAL.
+    </p>
+    <p>
+        The final piece of modules that really sets them apart from classes is what is known as a <em>mixin</em>. A mixin allows you to basically append a module's methods onto your own class and then start using them as instance methods of your class. Let's take a look at some code that implements a mixin:
+        <code>
+        module HelloMixin
+          def say_hi
+            puts "Hi, I am a mixin method"
+          end
+        end
+
+        class Cheeseburger
+          include HelloMixin
+
+          def what_am_i
+            puts "I am a cheeseburger"
+          end
+        end
+
+        burger = Cheeseburger.new
+
+        burger.what_am_i
+        # => "I am a cheeseburger"
+        burger.say_hi
+        # => "Hi, I am a mixin method"
+        </code>
+
+        By using the include keyword and our Module name, we have now transferred the methods of HelloMixin into our Cheeseburger class. When we run say_hi on our burger object, it runs the code from the module! This is a nifty way to add what is basically inheritance to a class from several different sources.
+    </p>
+
+      <!-- copy and paste as many sections as you want to add paragraphs -->
+  </article>
+</main>
+</body>
+</html>
