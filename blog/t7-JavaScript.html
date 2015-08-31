@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DBC Week 7 Tech Blog Post</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="default.css">
+</head>
+<body>
+<main>
+  <header>
+  <h1>Flexing my JavaScript Muscles</h1>
+  </header>
+  <h2>JavaScript is NOT like Java</h2>
+  <h4>August 30, 2015</h4>
+
+  <article>
+    <p>
+      While you will find a lot of similarities across all programming languages, it seems each has its own little quirks when trying to implement the same ideas. In Ruby, we have hashes which hold key/value pairs where the keys are generally symbols and values can be any sort of object (string,number,array,even another hash). In JavaScript, the same data type exists but is known as an Object Literal. These contain key/value pairs in much the same manner and can be manipulated as hashes can be in Ruby. There are some key differences though as explained below.
+    </p>
+    <p>
+      I won't cover how there are differences in how to create the hash in Ruby vs an object literal in JS, they are different languages so you would expect difference in syntax. I will dive into how to access items within the types of data.
+    </p>
+    <p>
+      Ruby allows you to access items in a hash through bracket notation. You can see this below:
+      <code>
+      grocery_list = {cheese: 3, eggs: "dozen", steak: 1}
+
+      grocery_list[:cheese]
+      => 3
+      </code>
+      By passing the key to the hash grocerylist, we will get the value of cheese in return.
+
+      JavaScript has a similar notation but on top of that also has dot notation to access items in an Object Literal:
+      <code>
+      var myGroceryList = {
+        cheese = 3,
+        eggs = "dozen",
+        steak = 1,
+      };
+
+      myGroceryList[cheese]
+      => 3
+      myGroceryList.cheese
+      => 3
+      </code>
+
+      These two different ways of accessing the same item in the object literal have their own advantages and disadvantages that you can read more about <a href="http://stackoverflow.com/questions/4968406/javascript-property-access-dot-notation-vs-brackets">here</a>.
+    </p>
+
+      <!-- copy and paste as many sections as you want to add paragraphs -->
+  </article>
+</main>
+</body>
+</html>
