@@ -4,32 +4,69 @@
 
 body {
   background-color: #FFFFFF;
-  margin:0px auto;
-  width: 900px;
+  margin:0;
+  width: 100%;
   color:#476499;
+  font-family: 'Questrial', sans-serif;
 }
 
+
+/* Header stuff */
+
 header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: #476499;
-  background-color:#9CADCC;
-  height:5em;
+  background-color:#fff;
+  height: 200px;
   text-align:center;
   width:100%;
   top:1em;
+  border-bottom: 1px solid #476499;
+}
+
+.header-title {
+
+}
+.header-subtitle {
+}
+
+#logoimg {
+  height: 25px;
+  padding: 0 3px;
+}
+
+/* Navigation Stuff */
+
+#navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #74A887;
+  height: 35px;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  flex-grow: 1;
+  height: 35px;
+  line-height: 2.8;
+}
+
+.nav-link:hover {
+  color: #4C4C4C;
 }
 
 section {
-  position:fixed;
-  height:7em;
-  top: 6em;
-  background-color:#CCA39C;
-  width:8em;
-  text-align: center;
 }
 
 article {
   position:relative;
-  background-color:#FFD39D;
+  background-color:#fff;
   height:15em;
   width:31.5em;
   margin:10px 10px;
@@ -73,18 +110,20 @@ ul {
 }
 
 footer {
-  color: #476499;
-  background-color:#9CADCC;
-  height:3em;
-  text-align:center;
-  width:900px;
-  bottom:0;
-  position:fixed;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #fff;
+  height: 3em;
+  text-align: center;
+  width: 100%;
+  bottom: 0;
+  position: fixed;
 }
 
 #containerblog {
   top: 0em;
-  background-color: #FFBA9D;
+  background-color: #fff;
   width:46.25em;
   left:10em;
   position:relative;
@@ -94,7 +133,7 @@ footer {
 
 .bloglist {
   position:relative;
-  background-color:#FFD39D;
+  background-color:#fff;
   height:3em;
   width:44.75em;
   margin:10px 10px;
@@ -110,6 +149,13 @@ a:hover {
   color:dimgray;
 }
 
-img {
-  margin-top:2.25em;
+/* Sharing */
+.social-link {
+  flex-grow: 1;
+  color: #CD5C5C;
+}
+
+.indeximg {
+  height: 35px;
+  width: 35px;
 }
